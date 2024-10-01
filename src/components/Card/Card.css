@@ -1,0 +1,96 @@
+.cardContainer {
+  box-sizing: border-box;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 3px #a8a8a8;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+ .cardContainer>* {
+    font-size: 12px;
+    width: 100%;
+}
+
+
+.cardFirst{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.cardFirst_h1{
+    font-size: 14px;
+    font-weight: 500;
+    color: #697077;
+}
+.CardFirstImageContainer{
+    position: relative;
+}
+.CardFirstImage{
+    height: 20px;
+    width: auto;
+    border-radius: 50%;
+}
+.showStatus {
+    background: rgb(1, 255, 141);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.cardSecond{
+    display: flex !important;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400 !important;
+    color: #343a3f;
+    line-height: 1.2;
+    font-style: normal;
+}
+.cardSecondStatus{
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.cardThird{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tags {
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    border: 1px solid #c1c7cd;
+    border-radius: 4px;
+    height: fit-content;
+    width: fit-content;
+    min-width: 20px;
+    min-height: 20px;
+}
+.cardThirdCircle
+{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(168, 168, 168);
+    margin-right: 3px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .cardContainer {
+        padding: 5%;
+    }
+}
